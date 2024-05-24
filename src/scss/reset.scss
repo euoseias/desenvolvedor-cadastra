@@ -1,0 +1,355 @@
+ /*Modelo de site*/
+
+
+ * {
+   box-sizing: border-box;
+ }
+
+ body {
+   background-color: #ffffff;
+   overflow: scroll;
+   font-family:Roboto;
+ }
+
+ /* Style the header */
+ header {
+   background-color: #ffffff;
+   padding: -70px 0;
+   text-align: left;
+   border-bottom: 2px solid rgb(153, 153, 153);
+ }
+
+ /* Create two columns/boxes that floats next to each other */
+ nav {
+   float: left;
+   width: 25%;
+   height: 600px;
+   /* only for demonstration, should be removed */
+   background: #ffffff;
+   padding: 70px;
+ }
+
+ /* Style the list inside the menu 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}*/
+
+ article {
+   float: left;
+   padding: 40px;
+   width: 70%;
+   background-color: #ffffff;
+   height: 1350px;
+   /* only for demonstration, should be removed */
+ }
+
+ /* Clear floats after the columns */
+ section::after {
+   content: "";
+   display: table;
+   clear: both;
+
+ }
+
+ /* Style the footer */
+ footer {
+   width: 100%;
+   background-color: #030303;
+   padding: 5px;
+   text-align: center;
+   color: white;
+   font-size: small;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+ @media (max-width: 600px) {
+
+   nav,
+   article {
+     width: 100%;
+     height: auto;
+   }
+ }
+
+ /* icon */
+ .icon img {
+   top: 19px;
+   height: 50px;
+   width: 210px;
+   position: relative;
+   right: 590px;
+ }
+
+ /*Icon carrinho de compra*/
+ .carrinho-compra img {
+  top: -35px;
+  height: 35px;
+  width: 32px;
+  position: relative;
+  left: 580px;
+}
+
+
+ /*Galeria*/
+
+ div.gallery {
+   width: 70%;
+   height: auto;
+ }
+
+ img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   height: 80%;
+ }
+
+ /*Descrição da imagem*/
+ div.desc {
+   display: grid;
+   padding: 15px;
+   text-align: center;
+   font-size: 12px;
+   font-family:Arial;
+ }
+
+ .responsive {
+   display: grid;
+
+
+   position: relative;
+   left: 100px;
+   padding: 0 6px;
+   float: left;
+   width: 24%;
+ }
+
+
+ .flex-container1 {
+   display: flex;
+   flex-flow: row wrap;
+
+ }
+
+
+ .flex-container2 {
+   display: flex;
+   flex-flow: row wrap;
+ }
+
+ .flex-container3 {
+   display: flex;
+   flex-flow: row wrap;
+ }
+
+ .left {
+   position: relative;
+   left: 100px;
+ }
+
+
+ input[type=checkbox] {
+   accent-color: orange;
+ }
+
+
+ /*button*/
+
+ .button {
+   background-color: #000000;
+   /* Green */
+   border: none;
+   color: white;
+   padding: 5px 19px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+
+
+ .button1 {
+   top: -40px;
+   position: relative;
+   left: 700px;
+   background-color: orange;
+   /* Green */
+   border: none;
+   color: white;
+   padding: 5px 19px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+
+ 
+ span.a:hover {
+   border: 1px solid #f8ac08;
+ }
+
+ span.a {
+   cursor: pointer;
+   display: inline;
+   width: 30px;
+   height: 30px;
+   padding: 5px;
+   border: 1px solid rgb(138, 138, 139);
+ }
+
+ span.b:hover {
+   border: 1px solid #f8ac08;
+ }
+
+ span.b {
+   cursor: pointer;
+   display: inline;
+   width: 30px;
+   height: 30px;
+   padding: 5px;
+   border: 1px solid rgb(138, 138, 139);
+ }
+
+ span.c:hover {
+   border: 1px solid #f8ac08;
+ }
+
+ span.c {
+   cursor: pointer;
+   display: inline;
+   width: 30px;
+   height: 30px;
+   padding: 5px;
+   border: 1px solid rgb(138, 138, 139);
+
+ }
+
+ p {
+   font-weight: bold;
+ }
+
+ span.preco {
+   display: inline;
+   font-weight: bold;
+ }
+
+ span.parcela {
+   display: inline-block;
+ }
+
+ span.icon {
+   position: relative;
+   left: 60px;
+   font-size: 20px;
+ }
+
+
+ .faixapreco {
+   display: inline-block;
+   font-size: 12px;
+ }
+
+ .grade {
+   position: inherit;
+ }
+
+
+ h1 {
+   font-size:30px;
+   font-family:arial;
+ }
+ h2{
+  font-size:19px;
+  font-family:arial;
+ }
+
+ h3{
+  font-size:19px;
+  font-family:arial;
+ }
+
+label{
+  font-size: 20px;
+
+}
+
+/*Option*/
+
+/*the container must be positioned relative:*/
+.custom-select {
+  top:130px;
+  font-family: Arial;
+  position: absolute;
+  right:20px;
+  border: 2px solid rgb(8, 8, 8);
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color:rgb(255, 255, 255);
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #ee840a transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #d66b14 transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #080808;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent orange(255, 253, 253, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  border: 2px solid rgb(8, 8, 8);
+  position: absolute;
+  background-color: White;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color:orange;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 

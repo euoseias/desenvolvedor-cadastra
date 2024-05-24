@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desenvolvedor Cadastra</title>
+  <link rel="stylesheet" href="scss/reset.scss"/>
+</head>
+
+<body>
+  <script src="JS/bundle.js"></script>
+  <header>
+    <span class="icon"><img src="img/logo-cadastra.png"></span>
+    <span class="carrinho-compra"><img src="img/carrinho-compras.jpg"></span>
+  </header>
+
+  <div class="custom-select" style="width:200px;">
+    <select>
+      <option value="0">Ordenar por:</option>
+      <option value="1">Mais recente</option>
+      <option value="2">Menor preço</option>
+      <option value="3">Maior preço</option>
+    </select>
+  </div>
+  <script src="JS/option.js"></script>
+
+  <section>
+    <nav>
+      <div class="left">
+        <h1>Blusas</h1>
+        <br>
+        <h2>CORES</h2>
+        <form action="#">
+          <input type="checkbox" id="amarelo" name="amerelo" value="amarelo">
+          <label for="cor1"> Amarelo </label><br><br>
+          <input type="checkbox" id="azul" name="azul" value="azul">
+          <label for="cor2"> Azul </label><br><br>
+          <input type="checkbox" id="branco" name="branco" value="branco">
+          <label for="cor3"> Branco </label><br><br>
+          <input type="checkbox" id="cinza" name="cinza" value="cinza">
+          <label for="cor4"> Cinza </label><br><br>
+          <input type="checkbox" id="laranja" name="laranja" value="laranja">
+          <label for="cor5"> Laranja </label><br><br>
+          <span id="dots"></span><span id="more">
+            <input type="checkbox" id="verde" name="verde" value="verde">
+            <label for="cor6"> Verde </label><br><br>
+            <input type="checkbox" id="vermelho" name="vermelho" value="Vermelho">
+            <label for="cor7"> Vermelho </label><br><br>
+            <input type="checkbox" id="preto" name="preto" value="preto">
+            <label for="cor8"> Preto </label><br><br>
+            <input type="checkbox" id="rosa" name="rosa" value="rosa">
+            <label for="cor9"> Rosa </label><br><br>
+            <input type="checkbox" id="vinho" name="vinho" value="vinho">
+            <label for="cor10"> Vinho </label><br><br>
+          </span>
+          <a href="#" onclick="myFunction()" id="myBtn">ver todas cores</a>
+        </form>
+
+        <br>
+        <h3>Tamanhos</h3>
+
+        <div>
+          <span class="a">P</span>
+          <span class="a">M</span>
+          <span class="a">G</span>
+          <span class="a">GG</span>
+        </div>
+        <br>
+        <div>
+          <span class="b">U</span>
+          <span class="b">36</span>
+          <span class="b">38</span>
+          <span class="b">40</span>
+        </div>
+        <br>
+        <div>
+          <span class="b">36</span>
+          <span class="b">38</span>
+          <span class="b">40</span>
+        </div>
+
+        <br>
+        <h3>FAIXA DE PREÇO</h3>
+
+        <div class="faixapreco">
+          <input type="checkbox" id="p1" name="preço" value="valor">
+          <label for="p1"> de R$0 até R$50 </label><br><br>
+          <input type="checkbox" id="p2" name="preço" value="valor">
+          <label for="p2"> de R$51 até R$150 </label><br><br>
+          <input type="checkbox" id="p3" name="preço" value="valor">
+          <label for="p3"> de R$151 até R$300 </label><br><br>
+          <input type="checkbox" id="p4" name="preço" value="valor">
+          <label for="p4"> de R$301 até R$500 </label><br><br>
+          <input type="checkbox" id="p5" name="preço" value="valor">
+          <label for="p5"> a parte de R$500 </label><br><br>
+        </div>
+      </div>
+    </nav>
+
+    <article>
+
+<div class="grade">
+
+      <div class="flex-container1">
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="#" href="#">
+              <img src="img/img_2.png">
+            </a>
+            <div class="desc">
+              CAMISETA MESCLA<br><br>
+              <span class="preco">R$28,00</span><br>
+              <span class="parcela">Até 3x de R$9,33</span>
+              <button class="button button5">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="#" href="#">
+              <img src="img/img_3.png">
+            </a>
+            <div class="desc">
+              SAIA EM COURO<br><br>
+              <span class="preco">R$398,00</span><br>
+              <span class="parcela">Até 10x de R$39,80</span>
+              <button class="button button5">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="#" href="#">
+              <img src="img/img_4.png">
+            </a>
+            <div class="desc">CARDIGAN TIGRE<br><br>
+              <span class="preco">R$398,00</span><br>
+              <span class="parcela">Até 10x de R$39,80</span>
+              <button class="button button5">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+       <br> <br> <br>
+      <div class="flex-container2">
+        <div class="responsive">
+          <div class="gallery">
+            <a target="#" href="#">
+              <img src="img/img_5.png">
+            </a>
+            <div class="desc">CARDIGAN OFF WHITE<br><br>
+              <span class="preco">R$99,90</span><br>
+              <span class="parcela">Até 3x de R$33,30</span>
+              <button class="button button5">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="#" href="#">
+              <img src="img/img_6.png">
+            </a>
+            <div class="desc">BODY LEOPARDO<br><br>
+              <span class="preco">R$129,90</span><br>
+              <span class="parcela">Até 3x de R$43,43</span>
+              <button class="button button5">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="#" href="#">
+              <img src="img/img_7.png">
+            </a>
+            <div class="desc">CASACO PELOS<br><br>
+              <span class="preco">R$28,00</span><br>
+              <span class="parcela">Até 10x de R$39,00</span>
+              <button class="button button5">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br> <br> <br>
+      <div class="flex-container3">
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="#" href="#">
+              <img src="img/img_8.png">
+            </a>
+            <div class="desc">
+              CROPPED STRIPES<br><br>
+              <span class="preco">R$120,00</span><br>
+              <span class="parcela">Até 3x de R$40,00</span>
+              <button class="button button5">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="#" href="#">
+              <img src="img/img_9.png">
+            </a>
+            <div class="desc">
+              CAMISA TRANSPARENTE<br><br>
+              <span class="preco">R$398,00</span><br>
+              <span class="parcela">Até 10x de R$39,80<span>
+              <button class="button button5">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="responsive">
+          <div class="gallery">
+            <a target="#" href="#">
+              <img src="img/img_10.png">
+            </a>
+            <div class="desc">
+              CARDIGAN TIGRE<br><br>
+              <span class="preco">R$398,00</span><br>
+              <span class="parcela">Até 10x de R$39,80</span>
+              <button class="button button5">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+    </article>
+
+  </section>
+  <br><br><br><br>
+  <button class="button1 button6">CARREGAR MAIS</button>
+  <footer>
+    <p>CADASTRA: IMPLATAÇÃO DE E-COMMERCE VTEX</p>
+  </footer>
+</body>
+
+</html>
